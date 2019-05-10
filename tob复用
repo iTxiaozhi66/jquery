@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>tab切换</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.tob{
+				width: 600px;
+				height: 500px;
+				border: 5px solid blueviolet;
+				margin: 30px ;
+				position: relative;
+				float: left;
+			}
+			.tob ul li{
+				list-style: none;
+				float: left;
+				width: 200px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 30px;
+				text-align: center;
+			}
+			.tob .con{
+				width: 580px;
+				height: 420px;
+				position: absolute;
+				left: 10px;
+				top: 60px;
+				display: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<div class="tob">
+			<ul>
+				<li style="background: red;">新闻</li>
+				<li style="background:yellow;">图片</li>
+				<li style="background: green">美食</li>
+			</ul>
+			<div class="con" style="background: khaki;display: block;"></div>
+			<div class="con" style="background: blueviolet;"></div>
+			<div class="con" style="background: yellowgreen;"></div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".tob ul li").mouseenter(function(){
+				var c = $(this).index();
+				$(this).parents('.tob').find('.con').eq(c).show().siblings('.con').hide();
+			})
+			
+			
+			
+		</script>
+	</body>
+</html>
