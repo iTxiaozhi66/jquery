@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米产品展示</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.mi{
+				width: 400px;
+				height: 500px;
+				border: solid 1px red;
+				margin: 30px;
+				float: left;
+				position: relative;
+			}
+			.bot{
+				width: 400px;
+				height: 150px;
+				background-color: lightblue;
+				position: absolute;
+				top: 500px;
+				left: 0px;
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mi">
+			<div class="bot">
+				
+			</div>
+			
+		</div>
+		<div class="mi">
+			<div class="bot">
+				
+			</div>
+			
+		</div>
+		<div class="mi">
+			<div class="bot">
+				
+			</div>
+			
+		</div>
+		<div class="mi">
+			<div class="bot">
+				
+			</div>
+			
+		</div>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".mi").mouseenter(function(){
+				$(this).animate({'top':'-5px'},300);
+				$(this).find('.bot').animate({'top':'350px','opacity':'0.8'},300);
+			})
+			$(".mi").mouseleave(function(){
+				$(this).animate({'top':'0px'},300);
+				$(this).find('.bot').animate({'top':'500px','opacity':'0'},300);
+			})
+		</script>
+	</body>
+</html>
